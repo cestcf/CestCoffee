@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>
+
+         C'est Coffee and Tea
+      </title>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+      <link
+         rel="shortcut icon"
+         href="./assets/LogoIcon.svg"
+         type="image/x-icon"
+      />
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+      <link
+         rel="icon"
+         href="./assets/LogoIcon.svg"
+         type="image/x-icon"
+         sizes="192x192"
+      />
+      <link
+         rel="appel-touch-icon"
+         href="./assets/LogoIcon.svg"
+         type="image/x-icon"
+         sizes="180x180"
+      />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Cedarville+Cursive&family=Josefin+Sans:wght@400;700&display=swap"
+         rel="stylesheet"
+      />
+      <link
+         href="http://fonts.cdnfonts.com/css/george-rounded?styles=104227"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="./css/normalize.css" />
+      <link rel="stylesheet" href="./css/main.css" />
+
+      <link
+         href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css"
+         rel="stylesheet"
+      />
+      <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+   </head>
+   <body>
+      <!-- start prelaoder -->
+      <div class="preloader">
+         <img src="./assets/preloaderImg.gif" alt="">
+      </div>
+      <!-- end prelaoder -->
+      <!-- start skip to content link -->
+      <a href="#main" class="skip-to-content">Skip to content</a>
+      <!-- end skip to content link -->
+      <!-- start a link to the project on github -->
+      <!-- end a link to the project on github -->
+      <!-- start home -->
+      <div class="home">
+         <!-- start haeder -->
+         <header class="header">
+            <div class="headerContainer flex">
+               <div class="logo"><img width="150px" height="150px" src="assets/logo.png" alt="logo" /></div>
+               <button
+                  aria-controls="menu"
+                  aria-expanded="false"
+                  aria-label="menu"
+                  class="toggleButton"
+               >
+            </button>
+               <nav>
+                  <ul id="menu" class="flex menu">
+                  </ul>
+               </nav>
+            </div>
+         </header>
+         <!-- end haeder -->
+         <!-- start  landing-->
+         <div class="landing" id="main">
+            <div class="container flex">
+               <div id="ladingContent" style="display: flex; flex-direction: column; align-items: center; gap: 10px; 
+               margin-top: 0px;">
+                  <h1 class="text-dark ff-Josefin fs-800">C'est Coffee and Tea</h1>
+                  <p class="ff-cedarville quote text-green">
+                     Chúng mình đến với nhau bằng sự chân thành và chân thật
+                  </p>
+                  <p class="quote text-green">
+                     Theo dõi chúng mình trên các nền tảng xã hội
+                  </p>
+
+
+                  <button onclick="goToContact()
+                  " style="background-color: #193e30; color: white; display: flex; align-items: center; padding: 10px; border: none; cursor: pointer;
+                  justify-content: flex-start; gap: 10px;
+                  " class="orderButton ff-George fs-400">
+                     <i class="fas fa-location-dot" style="margin-right: 8px;"></i>
+                     ĐỊA CHỈ
+                   </button>  
+
+                  <button style="background-color: #151515; color: white; display: flex; align-items: center; padding: 10px; border: none; cursor: pointer;
+                  justify-content: flex-start; gap: 10px;
+                  " class="orderButton ff-George fs-400">
+                     <i class="fab fa-tiktok" style="margin-right: 8px;"></i>
+                     TIKTOK
+                   </button>   
+                  <button style="background-color: #02b14f; color: white; display: flex; align-items: center; padding: 10px; border: none; cursor: pointer;
+                  justify-content: flex-start; gap: 10px;
+                  " class="orderButton  ff-George fs-400">
+                     <i class="fas fa-mug-hot" style="margin-right: 8px;"></i>
+
+                  GRAB
+                </button>
+                  <button style="background-color: #0766ff; color: white; display: flex; align-items: center; padding: 10px; border: none; cursor: pointer;
+                  justify-content: flex-start; gap: 10px;
+                  " class="orderButton  ff-George fs-400">
+                   <i class="fab fa-facebook" style="margin-right: 8px;"></i>
+                  FACEBOOK</button>
+                  <button style="background-color:#fa5031 ; color: white; display: flex; align-items: center; padding: 10px; border: none; cursor: pointer;
+                  justify-content: flex-start; gap: 10px;
+                  " class="orderButton  ff-George fs-400">
+              <img src="assets/coffees/shopee.png" alt="facebook" style="width: 20px; height: 20px; margin-right: 8px;">
+                  
+                  SHOPEE</button>
+                  <button></button>
+               </div>
+               <div class="">
+                  <img src="assets/coffee1.svg" alt="coffee cup" />
+               </div>
+            </div>
+            
+         </div>
+         <!-- end  landing-->
+      </div>
+      <!-- end home -->
+      <!-- start about -->
+    
+      <!-- end about -->
+      <!-- start promotion -->
+
+         <!-- end shop -->
+         <!-- start contact -->
+         <div class="contact" id="contact">
+            <div class="container flex">
+               <section class="map-container">
+                  <div id="map"></div>
+                  <div
+                     aria-hidden="true"
+                     class="sectionName fs-500 ff-cedarville text-dark rightSide"
+                  >
+                     Contacts
+                  </div>
+               </section>
+               <section>
+                  <div class="flex infoContainer">
+                     <div></div>
+                     <div class="contactInfo">
+                        <header class="text-dark lt-1 bold fs-600">
+                           <p class="ff-cedarville quote text-green " style="font-size: large;">
+                       Đến với chúng mình tại
+
+                        </header>
+                        <div class="lt-2">
+                           316/4 Tổ 10 <br />
+                           Ấp Đình Xã Tân Phú Trung<br />
+                           Huyện Củ Chi<br />
+                           TP.Hồ Chí Minh
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </div>
+         </div>
+      </div>
+ 
+      <script src="main.js"></script>
+      <script>
+         const goToContact = () => {
+            document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+         };
+      </script>
+   </body>
+</html>
