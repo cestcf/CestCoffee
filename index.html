@@ -1,185 +1,505 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C'est Coffee and Tea</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/logo.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="./assets/logo.png"
+      type="image/x-icon"
+      sizes="192x192"
+    />
+    <link
+      rel="appel-touch-icon"
+      href="./assets/logo.png"
+      type="image/x-icon"
+      sizes="180x180"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Cedarville+Cursive&family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="http://fonts.cdnfonts.com/css/george-rounded?styles=104227"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
 
-         C'est Coffee and Tea
-      </title>
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-      <link
-         rel="shortcut icon"
-         href="./assets/LogoIcon.svg"
-         type="image/x-icon"
-      />
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-      <link
-         rel="icon"
-         href="./assets/LogoIcon.svg"
-         type="image/x-icon"
-         sizes="192x192"
-      />
-      <link
-         rel="appel-touch-icon"
-         href="./assets/LogoIcon.svg"
-         type="image/x-icon"
-         sizes="180x180"
-      />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-         href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Cedarville+Cursive&family=Josefin+Sans:wght@400;700&display=swap"
-         rel="stylesheet"
-      />
-      <link
-         href="http://fonts.cdnfonts.com/css/george-rounded?styles=104227"
-         rel="stylesheet"
-      />
-      <link rel="stylesheet" href="./css/normalize.css" />
-      <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+  </head>
+  <body>
+    <!-- start prelaoder -->
+    <div class="preloader">
+      <img src="./assets/preloaderImg.gif" alt="" />
+    </div>
+    <!-- end prelaoder -->
+    <!-- start skip to content link -->
+    <a href="#main" class="skip-to-content">Skip to content</a>
+    <!-- end skip to content link -->
+    <!-- start a link to the project on github -->
+    <!-- end a link to the project on github -->
+    <!-- start home -->
+    <div class="home">
+      <!-- start haeder -->
+      <header class="header">
+        <div class="headerContainer flex">
+          <div class="logo">
+            <img
+              width="150px"
+              height="150px"
+              src="assets/logo.png"
+              alt="logo"
+            />
+          </div>
+          <button
+            aria-controls="menu"
+            aria-expanded="false"
+            aria-label="menu"
+            class="toggleButton"
+          ></button>
+          <nav>
+            <ul id="menu" class="flex menu"></ul>
+          </nav>
+        </div>
+      </header>
+      <!-- end haeder -->
+      <!-- start  landing-->
+      <div class="landing" id="main">
+        <div class="container flex">
+          <div
+            id="ladingContent"
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 10px;
+              margin-top: 0px;
+            "
+          >
+            <h1 class="text-dark ff-Josefin fs-800">C'est Coffee and Tea</h1>
+            <p class="ff-cedarville quote text-green">
+              Chúng mình đến với nhau bằng sự chân thành và chân thật
+            </p>
+            <p class="quote text-green">
+              Theo dõi chúng mình trên các nền tảng xã hội
+            </p>
 
-      <link
-         href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css"
-         rel="stylesheet"
-      />
-      <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
-   </head>
-   <body>
-      <!-- start prelaoder -->
-      <div class="preloader">
-         <img src="./assets/preloaderImg.gif" alt="">
-      </div>
-      <!-- end prelaoder -->
-      <!-- start skip to content link -->
-      <a href="#main" class="skip-to-content">Skip to content</a>
-      <!-- end skip to content link -->
-      <!-- start a link to the project on github -->
-      <!-- end a link to the project on github -->
-      <!-- start home -->
-      <div class="home">
-         <!-- start haeder -->
-         <header class="header">
-            <div class="headerContainer flex">
-               <div class="logo"><img width="150px" height="150px" src="assets/logo.png" alt="logo" /></div>
-               <button
-                  aria-controls="menu"
-                  aria-expanded="false"
-                  aria-label="menu"
-                  class="toggleButton"
-               >
+            <button
+              onclick="goToContact()
+                  "
+              style="
+                background-color: #193e30;
+                color: white;
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+                justify-content: flex-start;
+                gap: 10px;
+              "
+              class="orderButton ff-George fs-400"
+            >
+              <i class="fas fa-location-dot" style="margin-right: 8px"></i>
+              ĐỊA CHỈ
             </button>
-               <nav>
-                  <ul id="menu" class="flex menu">
-                  </ul>
-               </nav>
-            </div>
-         </header>
-         <!-- end haeder -->
-         <!-- start  landing-->
-         <div class="landing" id="main">
-            <div class="container flex">
-               <div id="ladingContent" style="display: flex; flex-direction: column; align-items: center; gap: 10px; 
-               margin-top: 0px;">
-                  <h1 class="text-dark ff-Josefin fs-800">C'est Coffee and Tea</h1>
-                  <p class="ff-cedarville quote text-green">
-                     Chúng mình đến với nhau bằng sự chân thành và chân thật
-                  </p>
-                  <p class="quote text-green">
-                     Theo dõi chúng mình trên các nền tảng xã hội
-                  </p>
 
+            <button
+              style="
+                background-color: #151515;
+                color: white;
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+                justify-content: flex-start;
+                gap: 10px;
+              "
+              class="orderButton ff-George fs-400"
+            >
+              <i class="fab fa-tiktok" style="margin-right: 8px"></i>
+              TIKTOK
+            </button>
+            <button
+              style="
+                background-color: #02b14f;
+                color: white;
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+                justify-content: flex-start;
+                gap: 10px;
+              "
+              class="orderButton ff-George fs-400"
+            >
+              <i class="fas fa-mug-hot" style="margin-right: 8px"></i>
 
-                  <button onclick="goToContact()
-                  " style="background-color: #193e30; color: white; display: flex; align-items: center; padding: 10px; border: none; cursor: pointer;
-                  justify-content: flex-start; gap: 10px;
-                  " class="orderButton ff-George fs-400">
-                     <i class="fas fa-location-dot" style="margin-right: 8px;"></i>
-                     ĐỊA CHỈ
-                   </button>  
+              GRAB
+            </button>
+            <button
+              style="
+                background-color: #0766ff;
+                color: white;
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+                justify-content: flex-start;
+                gap: 10px;
+              "
+              class="orderButton ff-George fs-400"
+            >
+              <i class="fab fa-facebook" style="margin-right: 8px"></i>
+              FACEBOOK
+            </button>
+            <button
+              style="
+                background-color: #fa5031;
+                color: white;
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+                justify-content: flex-start;
+                gap: 10px;
+              "
+              class="orderButton ff-George fs-400"
+            >
+              <img
+                src="assets/coffees/shopee.png"
+                alt="facebook"
+                style="width: 20px; height: 20px; margin-right: 8px"
+              />
 
-                  <button style="background-color: #151515; color: white; display: flex; align-items: center; padding: 10px; border: none; cursor: pointer;
-                  justify-content: flex-start; gap: 10px;
-                  " class="orderButton ff-George fs-400">
-                     <i class="fab fa-tiktok" style="margin-right: 8px;"></i>
-                     TIKTOK
-                   </button>   
-                  <button style="background-color: #02b14f; color: white; display: flex; align-items: center; padding: 10px; border: none; cursor: pointer;
-                  justify-content: flex-start; gap: 10px;
-                  " class="orderButton  ff-George fs-400">
-                     <i class="fas fa-mug-hot" style="margin-right: 8px;"></i>
-
-                  GRAB
-                </button>
-                  <button style="background-color: #0766ff; color: white; display: flex; align-items: center; padding: 10px; border: none; cursor: pointer;
-                  justify-content: flex-start; gap: 10px;
-                  " class="orderButton  ff-George fs-400">
-                   <i class="fab fa-facebook" style="margin-right: 8px;"></i>
-                  FACEBOOK</button>
-                  <button style="background-color:#fa5031 ; color: white; display: flex; align-items: center; padding: 10px; border: none; cursor: pointer;
-                  justify-content: flex-start; gap: 10px;
-                  " class="orderButton  ff-George fs-400">
-              <img src="assets/coffees/shopee.png" alt="facebook" style="width: 20px; height: 20px; margin-right: 8px;">
-                  
-                  SHOPEE</button>
-                  <button></button>
-               </div>
-               <div class="">
-                  <img src="assets/coffee1.svg" alt="coffee cup" />
-               </div>
-            </div>
-            
-         </div>
-         <!-- end  landing-->
+              SHOPEE
+            </button>
+            <button></button>
+          </div>
+          <div class="">
+            <img src="assets/coffee1.svg" alt="coffee cup" />
+          </div>
+        </div>
       </div>
-      <!-- end home -->
-      <!-- start about -->
-    
-      <!-- end about -->
-      <!-- start promotion -->
+      <!-- end  landing-->
+    </div>
+    <!-- end home -->
+    <!-- start about -->
+    <div class="about" id="about">
+      <div class="container flex">
+        <section class="bg-lightPink grid">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 370 267"
+            fill="none"
+            style="width: min(100%, 21.875rem)"
+          >
+            <path
+              d="M256.835 202.785C199.235 242.785 133.502 218.452 107.835 201.285H107.335C107.002 200.618 106.235 198.885 105.835 197.285C105.564 196.199 103.129 193.825 100.81 191.785M256.835 202.785C234.335 217.285 173.535 236.985 110.335 199.785M256.835 202.785C201.235 240.385 136.002 220.785 110.335 206.285V199.785M256.835 202.785L256.335 202.285M110.335 199.785L106.835 196.785L102.835 192.285L100.81 191.785M296.335 196.285L290.835 200.285C288.835 195.085 266.669 199.118 255.835 201.785L256.335 202.285M296.335 196.285C301.669 197.118 311.035 200.485 305.835 207.285C299.502 212.285 279.735 223.185 251.335 226.785C226.169 231.118 164.935 237.185 121.335 226.785C82.3355 219.785 22.4355 202.685 94.8355 190.285L97.8354 189.285M296.335 196.285C286.735 193.485 275.002 188.118 270.335 185.785M97.8354 189.285C98.6391 189.928 99.7114 190.819 100.81 191.785M97.8354 189.285L89.579 177.785M83.8354 169.785C38.5021 174.118 -36.1646 192.785 27.8354 232.785C64.6688 253.118 171.835 284.685 305.835 248.285C356.669 230.118 423.535 188.885 284.335 169.285M83.8354 169.785C53.8354 119.385 52.6688 59.7851 55.8354 36.285M83.8354 169.785L89.579 177.785M284.335 169.285L296.835 141.785M284.335 169.285L277.335 177.535M256.335 202.285L270.335 185.785M270.335 185.785L277.335 177.535M290.835 196.785L271.335 188.785L263.835 197.785L279.835 194.785L281.835 195.785H283.335L272.335 191.785L270.335 192.785L268.835 194.785L272.335 194.285M296.835 141.785C326.002 138.618 380.435 121.585 364.835 78.7851C360.502 68.9517 344.635 51.9851 315.835 62.7851M296.835 141.785C298.365 139.155 299.82 135.93 301.196 132.285M315.835 62.7851C315.497 65.7757 315.046 69.3376 314.486 73.285M315.835 62.7851L314.486 73.285M301.196 132.285C301.755 130.802 302.302 129.249 302.835 127.638M301.196 132.285C302.447 132.062 303.961 131.763 305.607 131.401M302.835 127.638L325.835 124.285C326.169 122.785 326.235 120.685 323.835 124.285C321.894 127.197 312.566 129.868 305.607 131.401M302.835 127.638C303.197 126.546 303.552 125.427 303.901 124.285M303.901 124.285L305.607 131.401M303.901 124.285C308.027 110.792 311.268 94.103 313.439 80.285M303.901 124.285C312.185 123.999 325.208 121.585 334.835 115.077M313.439 80.285C339.123 74.685 346.738 86.285 347.335 92.785C347.335 98.7967 345.519 103.742 342.568 107.785M313.439 80.285C313.822 77.8516 314.171 75.5072 314.486 73.285M314.486 73.285C319.769 72.285 330.635 70.585 331.835 71.785M314.486 73.285V36.285M342.568 107.785C345.574 110.952 348.463 116.685 335.962 114.285M342.568 107.785C341.741 108.918 340.825 109.98 339.835 110.975M335.962 114.285C337.343 113.275 338.643 112.174 339.835 110.975M335.962 114.285C335.592 114.555 335.216 114.819 334.835 115.077M339.835 110.975C342.169 113.106 344.435 116.91 334.835 115.077M314.486 36.285C288.207 65.885 215.103 70.285 181.835 68.785C153.169 70.4517 87.8354 66.285 55.8354 36.285M314.486 36.285C314.989 33.2774 314.043 29.6007 310.82 25.785M55.8354 36.285C54.603 33.4409 55.2688 29.7231 59.4112 25.785M65.8354 87.285C74.6688 124.785 101.135 200.285 136.335 202.285M310.82 25.785C300.47 13.5313 266.631 -0.15513 181.835 2.28504C102.263 4.57491 69.8333 15.877 59.4112 25.785M310.82 25.785C309.346 27.7004 307.157 29.9133 304.211 32.285M59.4112 25.785C60.5882 27.8957 62.067 29.894 63.8105 31.785M63.8105 31.785C70.6522 26.4517 87.1354 16.285 98.3354 18.285M63.8105 31.785C70.8334 39.4025 82.1506 45.2813 95.3354 49.7661M147.335 10.785C155.335 9.78503 172.735 7.98503 178.335 8.78503M189.835 8.78503C199.835 8.61837 220.035 8.78503 220.835 10.785M95.3354 49.7661C123.54 59.3598 160.291 62.5746 181.835 62.7851C223.604 62.7851 254.223 56.1279 275.335 48.0012M95.3354 49.7661C118.002 40.7499 185.735 27.7742 275.335 48.0012M275.335 48.0012C288.551 42.9142 298.042 37.2513 304.211 32.285M277.335 177.535C291.169 177.618 319.835 179.185 323.835 184.785M89.579 177.785C72.8312 178.118 38.4354 180.885 34.8354 189.285M58.3354 215.285C71.3354 224.118 106.935 241.385 145.335 239.785M231.335 237.285C248.669 235.285 285.335 229.785 293.335 223.785M267.835 17.285C278.586 19.285 300.912 25.085 304.211 32.285M299.835 64.785C300.002 84.4517 293.435 135.385 265.835 181.785M251.335 196.785L259.335 188.285M103.835 196.285L87.3354 200.785C86.8354 201.452 86.2354 202.685 87.8354 202.285C89.4354 201.885 99.8354 199.452 104.835 198.285L103.835 196.285Z"
+              stroke="#444A4A"
+              stroke-width="4"
+              style="stroke: #af9283"
+            />
+          </svg>
+          <div
+            aria-hidden="true"
+            class="sectionName fs-500 ff-cedarville text-dark leftSide"
+          >
+            Về C'est Coffee
+          </div>
+        </section>
+        <section>
+          <article class="flow">
+            <header class="bold ff-Josefin text-dark fs-700">
+              C'est Coffee
+            </header>
+            <p class="fs-300 lt-2">
+               C'est Coffee bắt đầu từ một ý tưởng đơn giản nhưng đầy đam mê: mang đến những thức uống tươi sạch, chất lượng cao cho những người yêu thích cà phê và trà. Với khát khao tạo ra một không gian thư giãn, nơi mọi người có thể thưởng thức những ly đồ uống được chế biến từ nguyên liệu tươi ngon nhất, C'est ra đời từ những ngày đầu thử nghiệm, lựa chọn các nguồn nguyên liệu chất lượng và không ngừng cải tiến công thức pha chế.
+            </p>
+            <p class="fs-300 lt-2">
+               Hành trình khởi nghiệp của C'est không phải lúc nào cũng suôn sẻ. Tuy nhiên, với sự kiên trì và niềm tin vào chất lượng, C'est đã dần chiếm được lòng tin của khách hàng. Những tách cà phê đậm đà, những ly trà thanh khiết và các món nước ép tươi ngon đã giúp C'est xây dựng được một cộng đồng yêu thích sự tươi mới và sự chăm sóc tận tâm. Hôm nay, C'est Coffee không chỉ là một quán cà phê, mà là một điểm đến của sự trải nghiệm và kết nối yêu thương.
+            </p>
+          </article>
+        </section>
+      </div>
+    </div>
+    <!-- end about -->
+    <!-- start promotion -->
+    <div class="promotion" id="promotion">
+      <div class="container flex">
+        <section class="grid">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 240 324"
+              fill="none"
+              style="width: min(100%, 15rem)"
+            >
+              <path
+                xmlns="http://www.w3.org/2000/svg"
+                d="M21.6087 11.3084C27.1821 7.55052 51.7951 0.48575 105.661 2.28952C141.596 1.69777 201.23 2.03783 210.499 6.61111M21.6087 11.3084C16.186 13.7644 10.7633 41.5216 10.7633 40.1688M21.6087 11.3084L27.9352 11.6372M205.529 11.3084L198.298 11.881M205.529 11.3084C211.833 9.39043 213.003 7.84636 210.499 6.61111M205.529 11.3084H212.533M177.059 13.5631C148.138 15.0663 85.2351 17.1707 64.9903 13.5631M177.059 13.5631C140.908 4.18351 87.2837 9.65495 64.9903 13.5631M177.059 13.5631L159.888 12.2103C132.021 11.3084 77.1914 10.2261 80.8065 13.1122C84.4217 15.9982 135.485 9.95558 135.485 9.95558M177.059 13.5631L188.809 12.6326M64.9903 13.5631L47.3666 12.6471M10.7633 40.1688C13.6253 40.6197 19.2589 41.251 18.8974 40.1688M10.7633 40.1688L9.79809 39.9623C6.36993 39.2293 2.75807 39.7808 2.21251 43.2438V43.2438C1.38803 48.4771 6.03876 52.972 11.2617 53.8602C12.7582 54.1147 14.249 54.3639 15.7342 54.6079M27.9352 11.6372C24.772 20.6968 18.5359 39.0865 18.8974 40.1688M27.9352 11.6372L41.9439 12.3653M18.8974 40.1688C20.861 40.4684 22.8193 40.758 24.772 41.0377M220.441 40.1688L228.575 39.2669M220.441 40.1688C222.249 40.1688 215.922 20.9285 212.533 11.3084M220.441 40.1688C218.675 40.5286 216.714 40.8973 214.566 41.2691M197.846 43.7017C200.892 43.3278 203.758 42.9438 206.432 42.5561M197.846 43.7017C197.244 33.7439 198.118 19.5739 206.432 42.5561M197.846 43.7017C185.402 45.229 169.948 46.5864 152.205 47.3321M206.432 42.5561C209.38 42.1287 212.096 41.6968 214.566 41.2691M200.106 33.4046C199.955 35.0581 199.744 38.7257 200.106 40.1688C200.462 41.5914 202.019 39.0403 202.785 37.5276C202.805 37.4872 202.802 37.4399 202.777 37.4023V37.4023C202.691 37.2736 202.493 37.3835 202.558 37.5243L204.173 41.0706L202.828 38.1617C201.918 36.1958 200.857 34.3038 199.654 32.5027V32.5027M188.809 12.6326L193.328 18.5235M188.809 12.6326L198.298 11.881M193.328 18.5235C191.52 15.7486 191.43 12.6999 198.298 11.881M193.328 18.5235C193.779 19.8763 197.937 11.6176 198.298 11.881M219.537 11.3084L210.499 6.61111M219.537 11.3084C223.152 19.8763 230.021 37.4631 228.575 39.2669M219.537 11.3084H212.533M228.575 39.2669H230.221C232.996 39.2669 234.559 38.6181 236.127 40.9072V40.9072C239.589 45.9584 233.993 53.5878 228.047 55.0518C226.915 55.3304 225.735 55.6091 224.508 55.8867M15.7342 54.6079C17.5417 73.3942 20.705 110.967 18.8974 110.967M15.7342 54.6079C17.0946 54.8314 18.4503 55.0505 19.8012 55.2653M18.8974 110.967C16.9392 110.666 13.0228 111.147 13.0228 115.476L24.992 224.679C25.4208 228.592 27.8217 231.894 31.0985 234.074V234.074M18.8974 110.967L15.657 113.841C15.1313 114.307 14.8304 114.977 14.8304 115.679V116.454C14.8304 117.193 15.3594 117.827 16.087 117.959L16.2457 117.988C17.5401 118.223 18.4636 116.764 17.6979 115.694L17.6229 115.59C17.5692 115.515 17.5024 115.45 17.4256 115.399V115.399C16.9086 115.055 16.9989 114.27 17.5804 114.053L19.1872 113.451C19.5698 113.308 19.999 113.37 20.326 113.614L20.5513 113.783C21.0796 114.178 21.0796 114.97 20.5513 115.366V115.366C20.1307 115.681 20.0298 116.269 20.3217 116.706L20.5512 117.05C21.0795 117.841 22.2194 117.902 22.829 117.172L23.6027 116.245C23.7763 116.037 24.0043 115.882 24.2613 115.796V115.796C24.8398 115.604 25.477 115.792 25.8584 116.268L25.9272 116.353C26.5205 117.094 26.3514 118.183 25.5616 118.709L24.4093 119.475C23.5204 120.067 23.0288 121.075 23.1351 122.138C26.6366 157.14 32.8768 225.911 31.0985 234.074M18.8974 110.967C22.1286 112.253 25.4045 113.454 28.7178 114.574M31.0985 234.074L33.4389 287.792C33.6724 293.149 36.3875 298.142 41.0401 300.808V300.808M31.0985 234.074C34.578 235.504 38.673 236.994 43.2995 238.466M209.596 232.27L205.412 286.163C204.914 292.574 201.577 298.489 196.039 301.755V301.755M209.596 232.27V232.27C214.579 230.613 214.917 224.239 215.598 219.031C219.402 189.944 224.965 145.172 226.511 125.101C227.027 118.402 226.205 109.995 219.537 109.163V109.163M209.596 232.27C208.248 232.89 206.896 233.491 205.541 234.074M219.537 109.163L224.508 55.8867M219.537 109.163L218.816 113.24C218.745 113.644 219.319 113.801 219.464 113.418V113.418C219.509 113.297 219.619 113.212 219.747 113.207C221.034 113.162 220.913 114.016 219.537 113.672C218.429 113.396 219.904 112.308 220.789 111.746C221.139 111.524 221.565 111.491 221.958 111.622V111.622C222.426 111.777 222.792 112.144 222.948 112.611L223.152 113.222L223.706 115.707C223.898 116.57 223.343 117.422 222.476 117.595L222.039 117.683C220.98 117.894 220.118 116.83 220.544 115.837L220.86 115.101C220.88 115.055 220.926 115.025 220.976 115.025V115.025C221.128 115.025 221.149 115.245 221 115.274L217.829 115.907C217.764 115.92 217.702 115.948 217.649 115.988L215.922 117.28M224.508 55.8867C222.929 56.244 221.272 56.5996 219.537 56.9515M215.922 117.28C213.911 155.61 209.02 232.631 205.541 234.074M215.922 117.28C214.195 117.727 212.348 118.179 210.388 118.633M205.541 234.074C202.688 235.301 199.82 236.447 196.943 237.516M196.943 237.516L204.625 119.9M196.943 237.516C192.145 239.297 187.319 240.863 182.482 242.232M204.625 119.9C205.081 119.805 205.533 119.709 205.981 119.613M204.625 119.9C203.45 120.145 202.245 120.39 201.01 120.633M189.261 122.736L182.482 242.232M189.261 122.736C184.973 123.432 180.442 124.093 175.704 124.699M189.261 122.736C191.115 122.435 192.923 122.128 194.683 121.815M182.482 242.232C178.72 243.296 174.951 244.241 171.185 245.074M175.704 124.699L171.185 245.074M175.704 124.699C171.632 125.22 167.406 125.7 163.051 126.127M171.185 245.074C167.414 245.908 163.645 246.631 159.888 247.25M163.051 126.127L159.888 247.25M163.051 126.127C158.372 126.585 153.542 126.982 148.59 127.3M159.888 247.25C155.195 248.022 150.52 248.634 145.879 249.099M148.59 127.3L145.879 249.099M148.59 127.3C144.889 127.538 141.119 127.733 137.293 127.877M145.879 249.099C143.002 249.388 140.139 249.62 137.293 249.801M137.293 127.877V249.801M137.293 127.877C131.387 128.1 125.347 128.203 119.217 128.161M137.293 249.801C131.174 250.188 125.136 250.335 119.217 250.277M119.217 128.161V250.277M119.217 128.161C113.854 128.125 108.422 127.978 102.949 127.704M119.217 250.277C114.663 250.233 110.18 250.069 105.787 249.801M102.949 127.704L105.787 249.801M102.949 127.704C99.0495 127.509 95.1296 127.249 91.2001 126.919M105.787 249.801C101.905 249.564 98.0925 249.246 94.3633 248.859M91.2001 126.919L94.3633 248.859M91.2001 126.919C86.2375 126.502 81.2596 125.972 76.2876 125.318M94.3633 248.859C89.3855 248.343 84.5552 247.705 79.9028 246.971M76.2876 125.318L79.9028 246.971M76.2876 125.318C72.5153 124.822 68.7465 124.253 64.9903 123.608M79.9028 246.971C76.2352 246.393 72.6781 245.756 69.2463 245.074M64.9903 123.608L69.2463 245.074M64.9903 123.608C60.2948 122.802 55.6192 121.876 50.9817 120.818M69.2463 245.074C64.8072 244.192 60.5778 243.234 56.59 242.232M50.9817 120.818L56.59 242.232M50.9817 120.818C49.9252 120.578 48.8708 120.33 47.8185 120.076M56.59 242.232C51.7912 241.025 47.3424 239.752 43.2995 238.466M35.1655 116.639L43.2995 238.466M35.1655 116.639C33.9217 116.262 32.6823 115.875 31.4477 115.476M35.1655 116.639C36.4019 117.014 37.6427 117.377 38.8876 117.731M23.8682 83.4593L19.8012 55.2653M23.8682 83.4593V55.9012M23.8682 83.4593C22.0606 72.6366 19.9819 52.5246 26.1277 58.6574C30.597 63.1174 30.2388 62.4419 28.8418 60.7588C28.3257 60.137 27.3384 60.5975 27.4647 61.3956V61.3956C27.6116 62.3237 29.1902 62.3278 29.43 61.4192C30.0835 58.943 30.9691 57.214 32.0023 58.6574C33.3879 60.5933 35.9244 61.0628 37.7794 61.0411C38.5403 61.0321 39.2325 61.6124 39.2325 62.3734V62.3734C39.2325 63.6913 41.0327 64.073 41.5676 62.8685L43.4374 58.6574M19.8012 55.2653C21.1617 55.4816 22.5174 55.6936 23.8682 55.9012M23.8682 55.9012C30.5116 56.9223 37.036 57.8387 43.4374 58.6574M43.4374 58.6574C112.103 67.4398 166.61 64.9843 201.914 59.9574M30.1947 23.9348L24.772 41.0377M24.772 41.0377C28.865 41.624 32.9332 42.167 36.9731 42.6687M40.5882 32.9537L36.9731 42.6687M36.9731 42.6687C53.6593 44.7413 69.8608 46.1114 85.3255 46.9336M44.2033 21.2291L41.9439 12.3653M44.2033 21.2291L47.3666 12.6471M44.2033 21.2291L44.6552 12.5062M41.9439 12.3653L44.6552 12.5062M47.3666 12.6471L44.6552 12.5062M85.3255 46.9336C85.4761 44.8289 86.2293 40.3491 88.0368 39.2669M85.3255 46.9336C108.686 48.1755 130.366 48.1671 149.494 47.4405M88.0368 39.2669C89.4147 38.4419 89.6547 41.5827 89.5575 44.4543C89.5267 45.363 88.4067 45.7036 87.8381 44.9941V44.9941C87.6755 44.7912 87.597 44.5338 87.6186 44.2748L88.0368 39.2669ZM149.494 47.4405C149.946 44.5656 151.211 38.9963 152.657 39.7178M149.494 47.4405C150.404 47.406 151.307 47.3698 152.205 47.3321M152.657 39.7178C153.679 40.2277 154.16 42.5697 154.353 44.6423C154.477 45.9637 153.512 47.1012 152.205 47.3321V47.3321M152.657 39.7178L152.205 47.3321M214.566 41.2691L210.499 24.8367M219.537 56.9515C219.537 57.3065 219.535 57.6595 219.53 58.0105C219.46 63.3062 216.382 62.7638 216.826 57.4862V57.4862M219.537 56.9515C218.654 57.1308 217.75 57.3091 216.826 57.4862M219.537 56.9515L216.826 57.4862M216.826 57.4862C215.228 57.7925 213.571 58.0952 211.855 58.3927M211.855 58.3927C211.855 63.1407 211.765 71.8249 211.403 68.5782C211.042 65.3314 209.445 60.7895 208.692 58.9244M211.855 58.3927C210.822 58.5719 209.767 58.7492 208.692 58.9244M208.692 58.9244C206.518 59.2784 204.258 59.6236 201.914 59.9574M201.914 59.9574C201.914 63.4322 201.642 70.1114 200.558 69.0291C199.473 67.9468 199.202 62.8662 199.202 60.4612M205.981 119.613C206.432 112.522 207.607 98.7011 208.692 100.144M205.981 119.613C206.805 119.437 207.613 119.26 208.404 119.084M208.692 100.144C209.776 101.587 210.275 113.071 210.388 118.633M208.692 100.144L208.404 119.084M210.388 118.633C209.739 118.783 209.078 118.933 208.404 119.084M191.52 122.24C191.52 118.182 191.791 110.426 192.876 111.869C193.96 113.312 194.533 119.101 194.683 121.815M194.683 121.815C195.292 121.707 195.894 121.599 196.491 121.49M196.491 121.49C196.792 116.178 197.575 106.097 198.298 108.261M196.491 121.49C197.254 121.35 198.007 121.21 198.75 121.069M198.298 108.261C199.021 110.426 200.407 117.411 201.01 120.633M198.298 108.261L198.75 121.069M201.01 120.633C200.267 120.779 199.514 120.925 198.75 121.069M41.0401 300.808C41.7932 286.831 43.2995 259.598 43.2995 262.484C43.2995 265.37 43.2995 290.079 43.2995 302.073M41.0401 300.808C41.7751 301.229 42.5284 301.651 43.2995 302.073M43.2995 302.073C45.0201 303.014 46.8294 303.955 48.7222 304.887M48.7222 304.887C49.3248 297.367 50.6202 283.317 50.9817 287.285C51.3432 291.254 51.7349 301.682 51.8855 306.4M48.7222 304.887C49.7522 305.395 50.8069 305.9 51.8855 306.4M51.8855 306.4C54.3271 307.534 56.8911 308.648 59.5676 309.727M59.5676 309.727C60.1702 304.802 61.3752 295.312 61.3752 296.755C61.3752 298.198 61.9777 306.714 62.279 310.792M59.5676 309.727C60.4591 310.086 61.363 310.441 62.279 310.792M62.279 310.792C91.6108 322.023 133.377 328.633 175.704 311.753M175.704 311.753C176.306 306.303 177.511 295.763 177.511 297.206C177.511 298.649 178.415 306.635 178.867 310.448M175.704 311.753C176.758 311.332 177.812 310.897 178.867 310.448M178.867 310.448C181.729 309.227 184.592 307.897 187.453 306.451M187.453 306.451C187.905 299.912 188.809 287.376 188.809 289.54C188.809 291.705 189.411 300.939 189.712 305.285M187.453 306.451C188.206 306.071 188.96 305.682 189.712 305.285M189.712 305.285C190.798 304.714 191.882 304.125 192.966 303.519M192.966 303.519C194.292 283.828 196.943 248.955 196.943 266.993C196.943 285.031 196.34 297.683 196.039 301.755M192.966 303.519C193.991 302.947 195.015 302.359 196.039 301.755M28.7178 114.574C29.0595 109.464 29.8332 99.6932 30.1947 101.497C30.5562 103.301 31.1807 111.568 31.4477 115.476M28.7178 114.574C29.625 114.881 30.5351 115.182 31.4477 115.476M38.8876 117.731C39.7557 113.222 41.4016 105.555 41.0401 110.967C41.0281 111.145 41.0185 111.314 41.011 111.473C40.8127 115.674 47.7481 109.033 47.3666 113.222V113.222C47.0051 117.19 47.5172 119.444 47.8185 120.076M38.8876 117.731C41.8434 118.57 44.822 119.351 47.8185 120.076M41.0401 116.378C42.3958 116.679 45.1975 117.28 45.559 117.28C45.9192 117.28 45.4121 113.997 45.1104 112.338C45.1082 112.325 45.1071 112.313 45.1071 112.301V112.301C45.1071 112.08 44.818 112.014 44.726 112.214C44.2763 113.192 43.7514 114.475 43.7514 115.025C43.7514 115.747 41.3413 116.228 40.1363 116.378"
+                stroke="#444A4A"
+                stroke-width="4"
+              />
+            </svg>
+            <div class="overlay">
+              <div
+                aria-hidden="true"
+                class="sectionName fs-500 ff-cedarville text-dark rightSide"
+              >
+               Nguyên liệu
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <article class="flow">
+            <header class="bold ff-Josefin text-dark fs-700">
+               Nguyên liệu tươi sạch
+            </header>
+            <p class="fs-300 lt-2">
+               Tại C'est Coffee, chúng tôi cam kết mang đến những thức uống tươi sạch nhất từ những nguyên liệu chọn lọc kỹ lưỡng. Mỗi tách cà phê được pha từ hạt cà phê rang mới, đảm bảo hương vị đậm đà và tinh tế. Trà được chiết xuất từ lá trà tươi ngon, kết hợp với các loại thảo mộc tự nhiên để tạo nên những ly trà thanh khiết và bổ dưỡng. Ngoài ra, các nguyên liệu trái cây tươi ngon và sữa tươi nguyên chất cũng được sử dụng để chế biến các loại nước ép và thức uống sữa mát lạnh. Tất cả đều được chuẩn bị ngay tại quán, giữ trọn vẹn dưỡng chất và hương vị tươi mới, mang đến cho bạn những trải nghiệm tuyệt vời và sức khỏe tối ưu.
+            </p>
+            <button class="orderButton bg-green text-white ff-George fs-400">
+           Đặt ngay
+            </button>
+          </article>
+        </section>
+      </div>
+    </div>
+    <!-- start shop -->
+    <div class="shop" id="shop">
+      <div class="container">
+        <header
+          style="margin-bottom: 20px; color: #033f2b"
+          class="bold ff-Josefin text-dark fs-700"
+        >
+          Menu từ C'est
+        </header>
 
-         <!-- end shop -->
-         <!-- start contact -->
-         <div class="contact" id="contact">
-            <div class="container flex">
-               <section class="map-container">
-                  <div id="map"></div>
-                  <div
-                     aria-hidden="true"
-                     class="sectionName fs-500 ff-cedarville text-dark rightSide"
+        <!-- Loading Spinner -->
+        <div
+          id="loading-spinner"
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 200px;
+          "
+        >
+          <div
+            style="
+              width: 50px;
+              height: 50px;
+              border: 5px solid #f3f3f3;
+              border-top: 5px solid #033f2b;
+              border-radius: 50%;
+              animation: spin 1s linear infinite;
+            "
+          ></div>
+        </div>
+
+        <div
+          class="products flex"
+          id="product-list"
+          style="display: none"
+        ></div>
+      </div>
+    </div>
+
+    <style>
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <div class="contactFotterShop">
+      <!-- end shop -->
+
+      <!-- start contact -->
+      <div class="contact" id="contact">
+        <div class="container flex">
+          <section class="map-container">
+            <div id="map"></div>
+            <div
+              aria-hidden="true"
+              class="sectionName fs-500 ff-cedarville text-dark rightSide"
+            >
+              Liên hệ
+            </div>
+          </section>
+          <section>
+            <div class="flex infoContainer">
+              <div></div>
+              <div class="contactInfo">
+                <header class="text-dark lt-1 bold fs-600">
+                  <p
+                    class="ff-cedarville quote text-green"
+                    style="font-size: large"
                   >
-                     Contacts
-                  </div>
-               </section>
-               <section>
-                  <div class="flex infoContainer">
-                     <div></div>
-                     <div class="contactInfo">
-                        <header class="text-dark lt-1 bold fs-600">
-                           <p class="ff-cedarville quote text-green " style="font-size: large;">
-                       Đến với chúng mình tại
+                    Đến với C'est tại
+                  </p>
+                </header>
 
-                        </header>
-                        <div class="lt-2">
-                           316/4 Tổ 10 <br />
-                           Ấp Đình Xã Tân Phú Trung<br />
-                           Huyện Củ Chi<br />
-                           TP.Hồ Chí Minh
-                        </div>
-                     </div>
-                  </div>
-               </section>
+                <div class="lt-2">
+                  316/4 Tổ 10 <br />
+                  Ấp Đình Xã Tân Phú Trung<br />
+                  Huyện Củ Chi<br />
+                  TP.Hồ Chí Minh
+                </div>
+              </div>
             </div>
-         </div>
+          </section>
+        </div>
       </div>
- 
-      <script src="main.js"></script>
-      <script>
-         const goToContact = () => {
-            document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
-         };
-      </script>
-   </body>
+    </div>
+    <script src="main.js"></script>
+    <script>
+      const goToContact = () => {
+        document
+          .getElementById("contact")
+          .scrollIntoView({ behavior: "smooth" });
+      };
+      async function getProduct() {
+  try {
+    // Show loading spinner
+    document.getElementById('loading-spinner').style.display = 'flex';
+    document.getElementById('product-list').style.display = 'none';
+
+    const response = await fetch(
+      "https://script.googleusercontent.com/macros/echo?user_content_key=9Iyze8MhdxYF_2ajPafohQbQV8dSlWdD2dEpp7qoLiS1FoXm2gCzi_-RVIV7pjJawXl5nXPj9VQgygEQlPsy0Nf6C4FrMQDvm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnCjSFQMfRgR89EBfOI6KpFPDP53HNG1VBUXv_a0CpXd1WNBb0TKrvDlba3kFp7s7y8p8ZfGx5USgjgV-I9DXRTOalSr-Qaa9Sg&lib=MDW2uW5yXJ14wcZPKyTuC-U0Md9AGQDbH"
+    );
+    const products = await response.json();
+    
+    // Render products
+    renderProducts(products);
+    
+    // Hide loading spinner and show products
+    document.getElementById('loading-spinner').style.display = 'none';
+    document.getElementById('product-list').style.display = 'flex';
+  } catch (error) {
+    console.error("Error fetching product data:", error);
+    // Show error message to user
+    document.getElementById('loading-spinner').innerHTML = `
+      <div style="text-align: center; color: #033f2b;">
+        <p>Không thể tải dữ liệu sản phẩm.</p>
+        <p>Vui lòng thử lại sau.</p>
+      </div>
+    `;
+  }
+}
+      function renderProducts(products) {
+        const productContainer = document.getElementById("product-list");
+        products.forEach((product) => {
+          const productHTML = `
+      <figure style="
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background: white;
+        transition: transform 0.3s ease;
+      "
+      onmouseover="this.style.transform='translateY(-5px)'"
+      onmouseout="this.style.transform='translateY(0)'">
+        <a href="#" style="
+          text-decoration: none;
+          display: block;
+        ">
+          <img
+            src="${product.img_link}"
+            alt="${product.name}"
+            aria-label="Buy the product"
+            style="
+              width: 100%;
+              height: 300px;
+              object-fit: cover;
+              display: block;
+              transition: transform 0.3s ease;
+            "
+            onmouseover="this.style.transform='scale(1.05)'"
+            onmouseout="this.style.transform='scale(1)'"
+          />
+          <figcaption style="
+            padding: 20px;
+            background: white;
+            text-align: center;
+          ">
+            <header class="ff-cedarville bold" style="
+              font-size: 1.5rem;
+              margin-bottom: 12px;
+              color: #333;
+            ">
+              ${product.name}
+            </header>
+            <p class="ff-Josefin" style="
+              font-size: 1rem;
+              line-height: 1.6;
+              margin-bottom: 12px;
+              color: #666;
+              padding: 0 10px;
+            ">
+              ${product.desciption}
+            </p>
+            <div style="
+              font-size: 1.25rem;
+              font-weight: bold;
+              color: #2c1810;
+              margin-top: 8px;
+            ">
+             ${
+            //format vnd
+            new Intl.NumberFormat("vi-VN", {
+              style: "currency",
+              currency: "VND",
+            }).format(product.price)
+            }
+            </div>
+          </figcaption>
+        </a>
+      </figure>
+    `;
+
+          productContainer.insertAdjacentHTML("beforeend", productHTML);
+        });
+      }
+      document.addEventListener("DOMContentLoaded", getProduct);
+    </script>
+  </body>
 </html>
